@@ -59,5 +59,18 @@ public class ArrayAltonivel {
 		}
 		System.out.println("");
 	}
+	
+	public boolean pesquisar(int valor){
+		int pos;
+		for (pos = 0; pos < array.length; pos++) {
+			if (valor == array[pos])
+				break;// se tiver para antes de chegar ao final do array
+		}
+
+		if (pos == array.length) // caso tenha atingido o final então não existe
+			return false;
+		else
+			return true;
+	}
 
 }
