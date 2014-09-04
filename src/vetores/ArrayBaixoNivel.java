@@ -38,9 +38,9 @@ public class ArrayBaixoNivel {
 
 	public static void main(String[] args) {
 		ArrayBaixoNivel lowArray = new ArrayBaixoNivel(3);
-		lowArray.set(0, 10);
 		lowArray.set(1, 2);
 		lowArray.set(2, 14);
+		lowArray.set(3, 654);
 		for( int i = 0; i < 3; i++){
 			System.out.println(lowArray.get(i)); 
 		}

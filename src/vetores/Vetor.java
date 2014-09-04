@@ -19,7 +19,7 @@ public class Vetor {
 		
 		//TODO para criar um vetor com N posições
 		//TODO iniciar o array
-		int[] intArray2 = {2, 5,4,7,8};
+		int[] intArray2 = new int[]{5, 2,8,7,4};
 		int i;
 		
 		System.out.format("Existem %d elementos \ne são eles: ", intArray2.length);
@@ -28,6 +28,8 @@ public class Vetor {
 		for(i = 0; i < intArray2.length; i++){
 			System.out.format("%d, ",intArray2[i]);
 		}
+		
+		
 		
 		System.out.println(""); 
 		long time = System.nanoTime();
@@ -40,9 +42,7 @@ public class Vetor {
 				break;
 			}		
 		}
-		
 		System.out.format("tempo para encontrar os elementos %d\n", (System.nanoTime() - time)/1000);
-		
 		if(i == intArray2.length)
 			System.out.println("elemento não pôde ser encontrado");
 		

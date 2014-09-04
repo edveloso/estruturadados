@@ -46,7 +46,10 @@ public class ArrayAltonivel {
 			return false;
 
 		for (int k = pos; k < array.length; k++) { // tira o elemento removentod
-													// o buraco
+			if (k + 1 == array.length) { // o buraco
+				array[k] = 0;
+				break;
+			}
 			array[k] = array[k + 1];
 		}
 		elementoAtual--;
@@ -59,8 +62,9 @@ public class ArrayAltonivel {
 		}
 		System.out.println("");
 	}
-	
-	public boolean pesquisar(int valor){
+
+	// sequencial, binária - procura uma chave
+	public boolean pesquisar(int valor) {
 		int pos;
 		for (pos = 0; pos < array.length; pos++) {
 			if (valor == array[pos])
@@ -71,6 +75,42 @@ public class ArrayAltonivel {
 			return false;
 		else
 			return true;
+	}
+
+	public boolean buscaBinaria(int valor) {
+		int mid;
+		int init = 0;
+		int fin = array.length;
+		//int cont = 0;
+		while (init <= fin) {
+			//System.out.println("passada" + cont++);
+			mid = (init + fin) / 2;
+			if (array[mid] == valor)
+				return true;
+			if (valor > array[mid])
+				init = mid + 1;
+			else
+				fin = mid - 1;
+		}
+		return false;
+	}
+
+	public void ordenacaoBolha() {
+
+		for (int i = array.length; i > 1; i--) {
+			for (int j = 0; j < i; j++) {
+				if(j>=array.length-1)
+					break;
+				if (array[j] > array[j + 1])
+					troca(j, j + 1);
+			}
+		}
+	}
+
+	private void troca(int a, int p) {
+		int temp = array[a];
+		array[a] = array[p];
+		array[p] = temp;
 	}
 
 }
