@@ -16,17 +16,24 @@ public class Formulario {
 		
 		ArrayAltonivel aan = new ArrayAltonivel(5);
 		aan.insere(7);
-		aan.insere(20);
+		aan.insere(40);
 		aan.insere(25);
-		aan.insere(30);
+		aan.insere(3);
 		aan.insere(234);
-		
-		aan.display();  
-		System.out.println(aan.buscaBinaria(7));
 		
 		//Crie um método para ordenar 
 		//os valores de um array
 		//metodo da bolha
+		//BubbleSort		
+		aan.ordenacaoBolha();
+		aan.display();  
+		System.out.println(aan.buscaBinaria(7));
+		
+		
+		//Crie um método de ordenação usando 
+		//o algoritmo de ordenação por
+		//inserção (InsersertionSort)
+		
 		
 		
 	}
