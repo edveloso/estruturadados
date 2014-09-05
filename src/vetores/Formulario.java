@@ -14,12 +14,14 @@ public class Formulario {
 
 		 */
 		
-		ArrayAltonivel aan = new ArrayAltonivel(5);
+		ArrayAltonivel aan = new ArrayAltonivel(7);
 		aan.insere(7);
-		aan.insere(40);
-		aan.insere(25);
+		aan.insere(6);
+		aan.insere(5);
+		aan.insere(4);
 		aan.insere(3);
-		aan.insere(234);
+		aan.insere(2);
+		aan.insere(1);
 		
 		//Crie um método para ordenar 
 		//os valores de um array
