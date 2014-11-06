@@ -1,4 +1,4 @@
-package lista;
+package listaencadeada;
 
 public class Formulario {
 
@@ -30,10 +30,10 @@ public class Formulario {
 		
 		
 //		
-//		Lista<String> lista2 = new Lista<String>();
-//		lista2.add("primeiro");
-//		lista2.add("segundo");
-//		lista2.print();
+//		Lista<String> listaduplamenteencadeada = new Lista<String>();
+//		listaduplamenteencadeada.add("primeiro");
+//		listaduplamenteencadeada.add("segundo");
+//		listaduplamenteencadeada.print();
 //		
 		
 	}

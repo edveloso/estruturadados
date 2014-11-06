@@ -1,4 +1,4 @@
-package lista;
+package listaencadeada;
 
 public class Aluno  {
 

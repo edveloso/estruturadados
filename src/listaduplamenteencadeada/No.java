@@ -1,4 +1,4 @@
-package lista2;
+package listaduplamenteencadeada;
 
 public class No {
 	
